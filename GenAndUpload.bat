@@ -1,7 +1,7 @@
 rmdir /s/q .\docs
 md .\docs
-copy /y .\dev\*.min.* .\docs
-copy /y .\dev\css\*.min.css .\docs\css
+copy /y .\dev\*.min.* .\docs\
+copy /y .\dev\css\*.min.css .\docs\css\
 
 
 git add .
