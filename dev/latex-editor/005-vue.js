@@ -10,11 +10,13 @@ const app = new Vue({
   watch: {
     text: function (val) {
       Vue.nextTick(function () {
-        refreshMathJax();
+        katexRender();
+        refreshMath();
       })
     }
   },
   mounted: function () {
+    katexRender();
     document.getElementsByTagName('textarea')[0].focus();
   },
   computed: {

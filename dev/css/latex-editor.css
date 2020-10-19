@@ -130,7 +130,7 @@ html,
   cursor: pointer;
 }
 
-.tool-btn>mjx-container {
+.tool-btn>mjx-container, .tool-btn .katex-display {
   padding: 0;
   margin: 0 !important;
 }
