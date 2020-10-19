@@ -1,8 +1,9 @@
+const toc=[];
 class markdownTreatment {
   constructor() {
     showdown.setFlavor('github');
     const config = {
-      extensions: [],
+      extensions: [showdownToc({ toc })],
       sanitize: false,
       tables: true,
       tasklists: true,
