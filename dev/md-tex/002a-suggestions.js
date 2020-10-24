@@ -4,7 +4,7 @@ function createDependencyProposals(range) {
   return [{
     label: 'Center',
     kind: monaco.languages.CompletionItemKind.Function,
-    insertText: '<center>${1:Hello}<\center>',
+    insertText: '<center>${1:Hello}<\\center>',
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
