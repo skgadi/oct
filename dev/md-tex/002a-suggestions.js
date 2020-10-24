@@ -56,6 +56,12 @@ function createDependencyProposals(range) {
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
+    label: 'Vertical dots',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: Array(20).fill(".").join("\n\n"),
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
     label: 'DisplayTex',
     kind: monaco.languages.CompletionItemKind.Function,
     insertText: '\$\$${1:x^2}\$\$',
