@@ -30,6 +30,7 @@ body {
   justify-items: center;
   column-gap: 4px;
   color: lightgray;
+  height: 32px;
 }
 #tool-bar >div {
   display: inline;
@@ -40,4 +41,8 @@ body {
 }
 #md-file{
   display: none;
+}
+
+#container {
+  height: calc(100% - 33px);
 }
