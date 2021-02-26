@@ -38,6 +38,54 @@ function createDependencyProposals(range) {
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
+    label: 'Vector 2x1',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{matrix} ${1:1} \\\\\\\\\\\\\\\\ ${2:2} \\\\\\\\end{matrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Vector 3x1',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{matrix} ${1:1} \\\\\\\\\\\\\\\\ ${2:2} \\\\\\\\\\\\\\\\ ${3:3} \\\\\\\\end{matrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Vector [2x1]',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{bmatrix} ${1:1} \\\\\\\\\\\\\\\\ ${2:2} \\\\\\\\end{bmatrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Vector [3x1]',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{bmatrix} ${1:1} \\\\\\\\\\\\\\\\ ${2:2} \\\\\\\\\\\\\\\\ ${3:3} \\\\\\\\end{bmatrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Matrix 2x2',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{matrix} ${1:1} & ${2:2} \\\\\\\\\\\\\\\\ ${3:3} & ${4:4} \\\\\\\\end{matrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Matrix 3x3',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{matrix} ${1:1} & ${2:2} & ${3:3} \\\\\\\\\\\\\\\\ ${4:4} & ${5:5} & ${6:6} \\\\\\\\\\\\\\\\ ${7:7} & ${8:8} & ${9:9} \\\\\\\\end{matrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Matrix [2x2]',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{bmatrix} ${1:1} & ${2:2} \\\\\\\\\\\\\\\\ ${3:3} & ${4:4} \\\\\\\\end{bmatrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Matrix [3x3]',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\\\\\\\begin{bmatrix} ${1:1} & ${2:2} & ${3:3} \\\\\\\\\\\\\\\\ ${4:4} & ${5:5} & ${6:6} \\\\\\\\\\\\\\\\ ${7:7} & ${8:8} & ${9:9} \\\\\\\\end{bmatrix}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
     label: 'URL',
     kind: monaco.languages.CompletionItemKind.Function,
     insertText: '[${1:SKGadi}](${2:https://skgadi.com} "${3:Title}")',
@@ -62,9 +110,21 @@ function createDependencyProposals(range) {
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
-    label: 'DisplayTex',
+    label: 'TexInline',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\$${1:x^2}\$',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'TexDisplay',
     kind: monaco.languages.CompletionItemKind.Function,
     insertText: '\$\$${1:x^2}\$\$',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'TexEnvironment',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '```latex\n${1:x^2}\n```',
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
@@ -113,6 +173,24 @@ function createDependencyProposals(range) {
     label: 'Braces',
     kind: monaco.languages.CompletionItemKind.Function,
     insertText: '\\left${2:(} ${1:x} \\right${3:)}',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Braces (·)',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\left( ${1:x} \\right)',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Braces [·]',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\left[ ${1:x} \\right]',
+    insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
+    range: range
+  }, {
+    label: 'Braces {·}',
+    kind: monaco.languages.CompletionItemKind.Function,
+    insertText: '\\left\\\\\\\\{ ${1:x} \\right\\\\\\\\}',
     insertTextRules: monaco.languages.CompletionItemInsertTextRule.InsertAsSnippet,
     range: range
   }, {
